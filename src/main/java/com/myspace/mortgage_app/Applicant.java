@@ -16,7 +16,7 @@ public class Applicant implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("Address")
 	private java.lang.String address;
 	@org.kie.api.definition.type.Label("SSN")
-	private java.lang.Integer ssn;
+	private String ssn;
 	@org.kie.api.definition.type.Label("Credit Rating")
 	private java.lang.Integer creditrating;
 
@@ -47,14 +47,6 @@ public class Applicant implements java.io.Serializable {
 		this.address = address;
 	}
 
-	public java.lang.Integer getSsn() {
-		return this.ssn;
-	}
-
-	public void setSsn(java.lang.Integer ssn) {
-		this.ssn = ssn;
-	}
-
 	public java.lang.Integer getCreditrating() {
 		return this.creditrating;
 	}
@@ -63,8 +55,16 @@ public class Applicant implements java.io.Serializable {
 		this.creditrating = creditrating;
 	}
 
+	public java.lang.String getSsn() {
+		return this.ssn;
+	}
+
+	public void setSsn(java.lang.String ssn) {
+		this.ssn = ssn;
+	}
+
 	public Applicant(java.lang.String name, java.lang.Integer annualincome,
-			java.lang.String address, java.lang.Integer ssn,
+			java.lang.String address, java.lang.String ssn,
 			java.lang.Integer creditrating) {
 		this.name = name;
 		this.annualincome = annualincome;
